@@ -38,8 +38,8 @@
             <name suffix=" " and="text" initialize-with="." name-as-sort-order="all"/>
           </names>
           <text variable="title" text-case="capitalize-first" suffix=". "/>
-          <text variable="container-title" form="short" font-style="italic" suffix=", "/>
-          <group delimiter=", ">
+          <text variable="container-title" form="short" font-style="italic" suffix=","/>
+          <group delimiter=",">
             <text variable="volume" font-weight="bold"/>
             <text variable="page"/>
             <date variable="issued" prefix="(" suffix=")">
@@ -69,9 +69,9 @@
             <text term="in" text-case="title" font-style="italic"/>
             <text variable="container-title" text-case="title" font-style="italic"/>
           </group>
-          <names variable="editor" delimiter=", " suffix="; ">
-            <name delimiter=", " initialize-with="." name-as-sort-order="all"/>
-            <label form="short" text-case="capitalize-first" prefix=", "/>
+          <names variable="editor" delimiter="," suffix="; ">
+            <name delimiter="," initialize-with="." name-as-sort-order="all"/>
+            <label form="short" text-case="capitalize-first" prefix=","/>
           </names>
           <group delimiter=": " suffix=", ">
             <text variable="publisher"/>
@@ -102,7 +102,7 @@
           <names variable="author" suffix=" ">
             <name delimiter="," and="text" initialize-with="." name-as-sort-order="all"/>
           </names>
-          <group delimiter=". " suffix=", ">
+          <group delimiter=". " suffix=",">
             <text variable="title" text-case="title"/>
             <text variable="genre"/>
           </group>
